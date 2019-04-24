@@ -23,7 +23,7 @@ public class QuestionScene extends Application {
 		try {
 			BorderPane root = new BorderPane();
 			Scene scene = new Scene(root,640,480);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			
 			ComboBox<String> topics = new ComboBox<String>(FXCollections.observableArrayList("item"));
