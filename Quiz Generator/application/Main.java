@@ -114,6 +114,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 
     importButton.setOnAction(e -> {
       BorderPane importQuestionForm = new BorderPane();
+      
 
       Label importLabel = new Label("Enter a file path:");
       TextField importTextField = new TextField();
@@ -299,7 +300,14 @@ public class Main extends Application implements EventHandler<ActionEvent> {
     RadioButton b2 = new RadioButton("B. O(logN)");
     RadioButton b3 = new RadioButton("C. O(1)");
     RadioButton b4 = new RadioButton("D. O(NlogN)");
-
+    
+    // it seems that using this can make b* buttons in a line
+    b1.setMaxWidth(200);
+    b2.setMaxWidth(200);
+    b3.setMaxWidth(200);
+    b4.setMaxWidth(200);
+    
+    
     b1.setAlignment(Pos.CENTER_LEFT);
     b2.setAlignment(Pos.CENTER_LEFT);
     b3.setAlignment(Pos.CENTER_LEFT);
@@ -320,7 +328,8 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 
     quitQuizButton = new Button("Exit Quiz");
     quitQuizButton.setOnAction(this);
-    submitButton.setMinSize(50, 40);
+//    submitButton.setMinSize(, 200);
+    submitButton.setMinSize(60, 30);
 
     VBox vbox = new VBox(questionLabel, question, b1, b2, b3, b4, submitButton);
     vbox.alignmentProperty().set(Pos.CENTER);
