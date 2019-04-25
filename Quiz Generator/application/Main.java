@@ -408,7 +408,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 
       topicsDisplay.add("binary trees");
       topicsDisplay.add("sorting");
-
+      indexScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
       questionScene = questionScene();
       addQuestionScene = addQuestionScene();
       indexScene = indexScene();
