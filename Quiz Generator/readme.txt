@@ -8,3 +8,10 @@ use the command below to execute the program
 java -jar executable.jar
 ```
 
+To use make:
+
+```
+> cd your_work_space/CS400TeamProject
+> make
+> make runjar
+```
