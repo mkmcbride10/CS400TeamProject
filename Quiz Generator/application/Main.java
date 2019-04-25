@@ -408,7 +408,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 
       topicsDisplay.add("binary trees");
       topicsDisplay.add("sorting");
-      indexScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+     // indexScene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
       questionScene = questionScene();
       addQuestionScene = addQuestionScene();
       indexScene = indexScene();
@@ -420,7 +420,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
     }
   }
 
-  public static void main(String[] args) throws FileNotFoundException, IOException, ParseException {
+  public static void main(String[] args) throws FileNotFoundException, IOException {
     launch(args);
   }
 
