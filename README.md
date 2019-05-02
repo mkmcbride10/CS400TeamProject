@@ -37,6 +37,8 @@ Declan Campbell - idcampbell@wisc.edu
 
 #3. Save, exit, or set the configuration and start the quiz again from the home screen
 
+#### While displaying the image of question, if there is no image, the program display a 200x200 black image. If there is an image without valid path, the program will not display anything. 
+
 ### File directory
 .
 ├── README.md   
