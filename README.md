@@ -27,6 +27,16 @@ Declan Campbell - idcampbell@wisc.edu
 
 #5 You can exit without save
 
+
+### Process
+
+#1. You will see a 200x200 image displayed every question. Closing that and choose the answer, you will get the result reminding
+
+
+#2. After answering all the questions, you will see a result, and you can back to the index.
+
+#3. Save, exit, or set configures and start the quiz again on the index page
+
 ### File directory
 .
 ├── README.md   
@@ -52,4 +62,5 @@ run the program
 make runjar
 ```
 
+### Thank you!
 
