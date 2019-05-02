@@ -132,10 +132,11 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 			List<Question> questionList = this.hashMap.get(topicName);
 
 			// Iterate through questions for this topic.
+
 			for (Question question : questionList) {
 				JSONObject questionObj = new JSONObject();
 				questionObj.put("meta-data", question.metaData);
-				questionObj.put("image", question.imagePath);
+				questionObj.put("imageFilename", question.imagePath);
 				questionObj.put("questionText", question.question);
 				questionObj.put("topic", topicName);
 
@@ -200,7 +201,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 				String questionText = (String) myQuestion.get("questionText"); // Grab the question text.
 				questionText = questionText.replaceAll("\\$", "");
 				String topic = (String) myQuestion.get("topic"); // Grab the topic.
-				String imagePath = (String) myQuestion.get("image"); // Grab the location of the image.
+				String imagePath = (String) myQuestion.get("imageFilename"); // Grab the location of the image.
 				JSONArray choices = (JSONArray) myQuestion.get("choiceArray"); // Grab a list of the answer
 																				// choices for this
 																				// question.
@@ -662,7 +663,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 			refresh();
 		});
 
-		vBox.getChildren().addAll(answerLabel, totaLabel, wrongtLabel, correctLabel, button1);
+		vBox.getChildren().addAll(answerLabel, totaLabel, wrongtLabel, correctLabel, scoreLabel, button1);
 
 		root.setCenter(vBox);
 		vBox.setAlignment(Pos.CENTER);
@@ -761,25 +762,30 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 			if (!currQuestion.imagePath.equals("none") && currQuestion.imagePath.trim().length() != 0) {
 				System.out.println("=======543 the image path is" + currQuestion.imagePath);
 
-				Image image = new Image(currQuestion.imagePath);
+				try {
+					Image image = new Image(currQuestion.imagePath);
 
-				// simple displays ImageView the image as is
-				ImageView iv1 = new ImageView();
-				iv1.setImage(image);
-				iv1.maxWidth(100);
-				iv1.maxHeight(100);
-				BorderPane picturePane = new BorderPane();
-				picturePane.setCenter(iv1);
-				Scene pictureScene = new Scene(picturePane, 200, 200);
-				Stage dialog = new Stage();
-				// dialog.setScene(pictureScene);
-				dialog.initModality(Modality.APPLICATION_MODAL);
-				dialog.initOwner(windowStage);
-				dialog.setScene(pictureScene);
-				dialog.setTitle("Question image");
-//				vbox.getChildren().add(iv1);
-				dialog.show();
-				display = true;
+					// simple displays ImageView the image as is
+					ImageView iv1 = new ImageView();
+					iv1.setImage(image);
+					iv1.maxWidth(100);
+					iv1.maxHeight(100);
+					BorderPane picturePane = new BorderPane();
+					picturePane.setCenter(iv1);
+					Scene pictureScene = new Scene(picturePane, 200, 200);
+					Stage dialog = new Stage();
+					// dialog.setScene(pictureScene);
+					dialog.initModality(Modality.APPLICATION_MODAL);
+					dialog.initOwner(windowStage);
+					dialog.setScene(pictureScene);
+					dialog.setTitle("Question image");
+//					vbox.getChildren().add(iv1);
+					dialog.show();
+					display = true;
+				} catch (Exception e) {
+					// TODO: handle exception
+					display = true;
+				}
 			}
 		}
 		// no picture need to display
@@ -927,7 +933,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 
 			} catch (IllegalArgumentException e) {
 				System.out.println("catch <= exception");
-				Alert alert = new Alert(AlertType.ERROR, "There is user input or data loading error, please try again");
+				Alert alert = new Alert(AlertType.ERROR, "There is user input or data loading error(e.g invalid image), please try again");
 				alert.showAndWait().filter(response -> response == ButtonType.OK);
 			}
 		}
