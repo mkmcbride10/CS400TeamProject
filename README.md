@@ -4,7 +4,9 @@ Junyu Wang        - junyu.wang@wisc.edu
 Christopher D’Amico - damico2@wisc.edu   
 Declan Campbell - idcampbell@wisc.edu   
 
-We have some specific instructions to user input when you want to add a question in our program.
+### We have some specific instructions to user input when you want to add a question in our program.
+
+#### NOTE . 
 
 #1. If there is no image to display, please to input 'none'
 
