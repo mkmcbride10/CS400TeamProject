@@ -8,8 +8,7 @@
    "choiceArray": 
     [
      {"isCorrect":"T","choiceText":"$O(1)$"},  
-     {"isCorrect":"F","choiceText":"$O(log N)$"},
-     {"isCorrect":"F","choiceText":"dsd"}
+     {"isCorrect":"F","choiceText":"$O(log N)$"}
     ]
   },
   {
@@ -29,8 +28,8 @@
   {
    "meta-data":"unused",
    "questionText": "this is the first hashbale.",
-   "topic": "kk",
-   "image":"none",
+   "topic": "hashtable",
+   "image":"",
    "choiceArray": 
     [
      {"isCorrect":"T","choiceText":"$O(1)$"},  
@@ -43,7 +42,7 @@
   {
    "meta-data":"unused",
    "questionText": "this is the second hashtable?",
-   "topic": "t",
+   "topic": "hashtable",
    "imageFile":"none",
    "choiceArray":   
     [
