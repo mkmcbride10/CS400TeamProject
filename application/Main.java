@@ -927,7 +927,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 
 			} catch (IllegalArgumentException e) {
 				System.out.println("catch <= exception");
-				Alert alert = new Alert(AlertType.ERROR, "Number of questions must be a positive integer");
+				Alert alert = new Alert(AlertType.ERROR, "There is user input or data loading error, please try again");
 				alert.showAndWait().filter(response -> response == ButtonType.OK);
 			}
 		}
