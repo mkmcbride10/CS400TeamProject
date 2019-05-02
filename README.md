@@ -15,6 +15,18 @@ Declan Campbell - idcampbell@wisc.edu
 #3. We assume that the user will put no more than 5 choices\n please fill the left blank with 'N/A' if your choices are less than 5
 
 
+### Command on the index page
+
+#1 you can select a topic, you can see the label under the "Start Quiz". And you will see the total numbers of different questions on the upper right corner.  
+
+#2 You can add a question, please the follow the NOTE above.
+
+#3 You should import the Question to initilize the questions 
+
+#4 You can save this(this won't close the window)
+
+#5 You can exit without save
+
 ### File directory
 .
 ├── README.md   
