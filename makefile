@@ -4,19 +4,17 @@ CLASSPATH = .:./classes/:json-simple-1.1.1.jar
 
 make: 
 	javac -cp $(CLASSPATH) -d . application/*.java
-	java application.Main
+	java -cp $(CLASSPATH) application.Main
 
 jar: 
 	jar cvmf manifest.txt executable.jar .
 
 runjar:
-	java -jar executable.jar
+	java -Xbootclasspath/a:json-simple-1.1.1.jar: -jar executable.jar
 
-test: 
-	javac -cp $(CLASSPATH) *.java
-	java -jar junit-platform-console-standalone-1.3.2.jar --class-path .:./classes/ -p ""
 
 clean:
-	\rm *.class
+	\rm application/*.class
 	\rm executable.jar
+
 
