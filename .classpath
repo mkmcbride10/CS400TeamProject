@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+<<<<<<< HEAD
 	<classpathentry kind="src" path="Quiz Generator"/>
 	<classpathentry kind="lib" path="Quiz Generator/junit-platform-console-standalone-1.3.2.jar"/>
 	<classpathentry kind="lib" path="Quiz Generator/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="Quiz Generator"/>
+=======
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="lib" path="json-simple-1.1.1.jar"/>
+	<classpathentry kind="output" path=""/>
+>>>>>>> 6d787203a423ed9f794855468a90c74591c8ac1d
 </classpath>

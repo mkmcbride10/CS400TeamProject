@@ -8,7 +8,12 @@
    "choiceArray": 
     [
      {"isCorrect":"T","choiceText":"$O(1)$"},  
+<<<<<<< HEAD
      {"isCorrect":"F","choiceText":"$O(log N)$"}
+=======
+     {"isCorrect":"F","choiceText":"$O(log N)$"},
+     {"isCorrect":"F","choiceText":"dsd"}
+>>>>>>> 6d787203a423ed9f794855468a90c74591c8ac1d
     ]
   },
   {
@@ -28,8 +33,13 @@
   {
    "meta-data":"unused",
    "questionText": "this is the first hashbale.",
+<<<<<<< HEAD
    "topic": "hashtable",
    "image":"",
+=======
+   "topic": "kk",
+   "image":"none",
+>>>>>>> 6d787203a423ed9f794855468a90c74591c8ac1d
    "choiceArray": 
     [
      {"isCorrect":"T","choiceText":"$O(1)$"},  
@@ -42,7 +52,11 @@
   {
    "meta-data":"unused",
    "questionText": "this is the second hashtable?",
+<<<<<<< HEAD
    "topic": "hashtable",
+=======
+   "topic": "t",
+>>>>>>> 6d787203a423ed9f794855468a90c74591c8ac1d
    "imageFile":"none",
    "choiceArray":   
     [
