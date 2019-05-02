@@ -4,6 +4,8 @@ Junyu Wang        - junyu.wang@wisc.edu
 Christopher D’Amico - damico2@wisc.edu   
 Declan Campbell - idcampbell@wisc.edu   
 
+#### While displaying the image of question, if there is no image, the program display a 200x200 black image. If there is an image without valid path, the program will not display anything. 
+
 ### Instructions for adding a question:
 
 #### NOTE . 
@@ -37,7 +39,7 @@ Declan Campbell - idcampbell@wisc.edu
 
 #3. Save, exit, or set the configuration and start the quiz again from the home screen
 
-#### While displaying the image of question, if there is no image, the program display a 200x200 black image. If there is an image without valid path, the program will not display anything. 
+
 
 ### File directory
 .
