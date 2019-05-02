@@ -7,13 +7,9 @@
    "imageFilename":"goodhash2_AK.jpg",
    "choiceArray": 
     [
-     {"isCorrect":"T","choiceText":"$O(1)$"},  
-<<<<<<< HEAD
-     {"isCorrect":"F","choiceText":"$O(log N)$"}
-=======
      {"isCorrect":"F","choiceText":"$O(log N)$"},
      {"isCorrect":"F","choiceText":"dsd"}
->>>>>>> 6d787203a423ed9f794855468a90c74591c8ac1d
+
     ]
   },
   {
@@ -33,17 +29,12 @@
   {
    "meta-data":"unused",
    "questionText": "this is the first hashbale.",
-<<<<<<< HEAD
+
    "topic": "hashtable",
    "image":"",
-=======
    "topic": "kk",
-<<<<<<< HEAD
    "imageFilename":"none",
-=======
    "image":"none",
->>>>>>> 6d787203a423ed9f794855468a90c74591c8ac1d
->>>>>>> eedc30eafebd293ef2af3f86a1d30dc93a003693
    "choiceArray": 
     [
      {"isCorrect":"T","choiceText":"$O(1)$"},  
@@ -56,16 +47,11 @@
   {
    "meta-data":"unused",
    "questionText": "this is the second hashtable?",
-<<<<<<< HEAD
    "topic": "hashtable",
-=======
    "topic": "t",
-<<<<<<< HEAD
    "imageFilename":"none",
-=======
->>>>>>> 6d787203a423ed9f794855468a90c74591c8ac1d
    "imageFile":"none",
->>>>>>> eedc30eafebd293ef2af3f86a1d30dc93a003693
+
    "choiceArray":   
     [
      {"isCorrect":"F","choiceText":"pwd"},
