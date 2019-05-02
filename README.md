@@ -4,7 +4,7 @@ Junyu Wang        - junyu.wang@wisc.edu
 Christopher D’Amico - damico2@wisc.edu   
 Declan Campbell - idcampbell@wisc.edu   
 
-#### While displaying the image of question, if there is no image, the program display a 200x200 black image. If there is an image without valid path, the program will not display anything. 
+#### While displaying the image of question, if there is no image, the program display a 200x200 black image. If there is an image without valid path, the program will display an alert. 
 
 ### Instructions for adding a question:
 

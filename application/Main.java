@@ -785,6 +785,13 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 				} catch (Exception e) {
 					// TODO: handle exception
 					display = true;
+					Alert alert = new Alert(AlertType.ERROR);
+					 
+					alert.setTitle("Error alert");
+					alert.setHeaderText("Can not add image");
+					alert.setContentText("The image cannot be loaded correctly");
+					 
+					alert.showAndWait().filter(response->response == ButtonType.OK);
 				}
 			}
 		}
